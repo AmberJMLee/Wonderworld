@@ -27,9 +27,15 @@
 
         'Adds the file directory to the text box
         txtFileDirectory.Text = myFileDlog.FileName
+        'picDisplay.Picture = LoadPicture(myFileDlog.FileName)
+        PictureBox1.Load(txtFileDirectory.Text)
     End Sub
 
     Private Sub Maker_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
 
     End Sub
 End Class
